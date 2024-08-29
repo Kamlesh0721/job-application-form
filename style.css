@@ -1,28 +1,80 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color: #ccc;
+    
+}
+.container {
+  width: 900px;
+  margin: 0 auto;
 }
 
-.container{
-    width: 900px;
-    margin: 0 auto;
+.job_form {
+  width: 600px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+  border-radius: 10px;
 }
 
-.job_form{
-    width: 600px;
-    margin: 50px auto;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
-    border-radius: 10px;
+h1 > span {
+  font-size:small;
 }
 
-h1>span{
-    font-size: xx-small;
+.form_container {
+    margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  /* grid-template-columns: repeat(auto-fit, min-max(200px, 1fr)); */
+  gap: 20px;
 }
 
-.form_container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, min-max(200px,1fr));
+.address_element{
+    display: flex;
+    flex-direction: column;
+    grid-row: 3/5;
+    grid-column: 2/3;
+   
+}  
+
+.address_element>textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
+  overflow: hidden;
+}
+
+.form_element {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+input,select,textarea{
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+}
+
+label{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.button_container{
+    margin:15px 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+.button_container>button{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: tomato;
+    color: white;
+    font-weight: bolder;
 }

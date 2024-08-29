@@ -30,6 +30,12 @@
                 placeholder="Last Name"
               />
             </div>
+
+            <div class="form_element">
+              <label for="date_of_birth">DOB</label>
+              <input  id="date_of_birth" name="date_of_birth" type="date" />
+            </div>
+
             <div class="form_element">
               <label for="emai_id">Email</label>
               <input
@@ -48,15 +54,18 @@
                 <option value="fullstack">Fullstack</option>
               </select>
             </div>
-
             <div class="form_element">
+              <label for="upload_resume">Resume</label>
+              <input id="upload_resume" name="upload_resume" type="file" />
+            </div>
+            <div class="address_element">
               <label for="address">Address</label>
-              <input
+              <textarea
                 id="address"
                 name="address"
                 type="address"
                 placeholder="Address"
-              />
+              ></textarea>
             </div>
             <div class="form_element">
               <label for="city">City</label>
@@ -64,17 +73,12 @@
             </div>
             <div class="form_element">
               <label for="pincode">Pincode</label>
-              <input id="pincode" name="pincode" type="number" placeholder="pincode" />
+              <input id="pincode" name="pincode" type="number" placeholder="Pincode" />
             </div>
-            <div class="form_element">
-              <label for="date_of_birth">DOB</label>
-              <input id="date_of_birth" name="date_of_birth" type="date" />
-            </div>
+            
+           
           </div>
-          <div class="form_element">
-            <label for="upload_resume">Resume</label>
-            <input id="upload_resume" name="upload_resume" type="file" />
-          </div>
+          
           <div class="button_container">
             <button type="button">Apply Now</button>
         </div>
