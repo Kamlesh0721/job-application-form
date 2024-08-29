@@ -1,11 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="job_form">
+        <h1>Job Application <span>Developer</span></h1>
+        <form action="">
+          <div class="form_container">
+            <div class="form_element">
+              <label for="f_name">First Name</label>
+              <input
+                id="f_name"
+                name="f_name"
+                type="text"
+                placeholder="First Name"
+              />
+            </div>
+            <div class="form_element">
+              <label for="l_name">Last Name</label>
+              <input
+                id="l_name"
+                name="l_name"
+                type="text"
+                placeholder="Last Name"
+              />
+            </div>
+            <div class="form_element">
+              <label for="emai_id">Email</label>
+              <input
+                id="emai_id"
+                name="emai_id"
+                type="email"
+                placeholder="Email"
+              />
+            </div>
+            <div class="form_element">
+              <label for="job_role">Job Role</label>
+              <select name="job_role" id="job_role">
+                <option value="" hidden>Job Role</option>
+                <option value="frontend">Frontend</option>
+                <option value="backend">Backend</option>
+                <option value="fullstack">Fullstack</option>
+              </select>
+            </div>
+
+            <div class="form_element">
+              <label for="address">Address</label>
+              <input
+                id="address"
+                name="address"
+                type="address"
+                placeholder="Address"
+              />
+            </div>
+            <div class="form_element">
+              <label for="city">City</label>
+              <input id="city" name="city" type="text" placeholder="City" />
+            </div>
+            <div class="form_element">
+              <label for="pincode">Pincode</label>
+              <input id="pincode" name="pincode" type="number" placeholder="pincode" />
+            </div>
+            <div class="form_element">
+              <label for="date_of_birth">DOB</label>
+              <input id="date_of_birth" name="date_of_birth" type="date" />
+            </div>
+          </div>
+          <div class="form_element">
+            <label for="upload_resume">Resume</label>
+            <input id="upload_resume" name="upload_resume" type="file" />
+          </div>
+          <div class="button_container">
+            <button type="button">Apply Now</button>
+        </div>
+        </div>
+        
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
