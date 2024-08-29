@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "SUSE", sans-serif;
 }
 body{
     background-color: #ccc;
@@ -66,15 +67,23 @@ label{
 }
 
 .button_container{
-    margin:15px 5px;
+    margin:20px 5px;
     display: flex;
     justify-content: flex-end;
 }
 .button_container>button{
-    padding: 5px;
+    padding: 5px 10px;
     border: none;
     border-radius: 5px;
-    background-color: tomato;
-    color: white;
+    text-align: center;
+    font-size: medium;
     font-weight: bolder;
+    background-color: #E85C0D;
+    color: white;
+    transition: 0.3s ease-in;
+}
+.button_container>button:hover{
+    cursor: pointer;
+    background-color:#C7253E;
+    transition: 0.3s ease-out;
 }
