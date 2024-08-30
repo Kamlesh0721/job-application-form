@@ -4,17 +4,16 @@
   box-sizing: border-box;
   font-family: "SUSE", sans-serif;
 }
-body{
-    background-color: #ccc;
-    
+body {
+  background-color: #ccc;
 }
 .container {
-  width: 900px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .job_form {
-  width: 600px;
+  max-width: 600px;
   margin: 50px auto;
   background-color: white;
   padding: 20px;
@@ -23,67 +22,68 @@ body{
 }
 
 h1 > span {
-  font-size:small;
+  font-size: small;
 }
 
 .form_container {
-    margin-top: 20px;
+  margin-top: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  /* grid-template-columns: repeat(auto-fit, min-max(200px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
 
-.address_element{
-    display: flex;
-    flex-direction: column;
-    grid-row: 3/5;
-    grid-column: 2/3;
-   
-}  
+.address_element {
+  display: flex;
+  flex-direction: column;
+}
 
-.address_element>textarea{
-    width: 100%;
-    height: 100%;
-    resize: none;
+.address_element > textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
   overflow: hidden;
 }
 
 .form_element {
   display: flex;
   flex-direction: column;
-  
 }
 
-input,select,textarea{
-    padding: 6px 10px;
-    border: 1px solid #ccc;
+input,
+select,
+textarea {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
 }
 
-label{
-    font-size: 15px;
-    margin-bottom: 5px;
+label {
+  font-size: 15px;
+  margin-bottom: 5px;
 }
 
-.button_container{
-    margin:20px 5px;
-    display: flex;
-    justify-content: flex-end;
+.button_container {
+  margin-top: 20px 5px 10px;
+  display: flex;
+  justify-content: flex-end;
 }
-.button_container>button{
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    font-size: medium;
-    font-weight: bolder;
-    background-color: #E85C0D;
-    color: white;
-    transition: 0.3s ease-in;
+.button_container > button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: medium;
+  font-weight: bolder;
+  background-color: #e85c0d;
+  color: white;
+  transition: 0.3s ease-in;
 }
-.button_container>button:hover{
-    cursor: pointer;
-    background-color:#C7253E;
-    transition: 0.3s ease-out;
+.button_container > button:hover {
+  cursor: pointer;
+  background-color: #c7253e;
+  transition: 0.3s ease-out;
+}
+@media (max-width: 800px) {
+  .form_container {
+    grid-template-columns: 1fr;
+  } 
 }
